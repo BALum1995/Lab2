@@ -33,22 +33,24 @@ public class Lab2 {
 	// If the original man is going AWAY from St. Ives, then the only
 	// person going is the narrator
 
-	if (manGoingToStIves) {
+	if (manGoingToStIves = true) {
 	    // 2. Remember, if the original man is going to St. Ives, then
 	    // all of the wives, sacks, cats, and kittens are as well, along
 	    // with the narrator.
 	    // Calculate the number going to St. Ives
-	    total = (numWives * numSacksPerWife * numCatsPerSack * numKitsPerCat) + 1 + 1;
+	    total = (numWives + (numWives * numSacksPerWife) + (numWives * numSacksPerWife * numCatsPerSack) + (numWives * numSacksPerWife * numCatsPerSack * numKitsPerCat) + 1 + 1);
 	} else {
 	    // Otherwise, only the narrator is going!
 	    total = 1;
 	}
+	
 	
 	// 3. Right before exiting, the system should print
 	// "Number going to St. Ives is " and then, on the same line,
 	// the number going to St. Ives (stored in the _total_ variable).
 	// Add a statement or statements that will do this.
 	
+	System.out.println("Number going to St. Ives is " + total);
     }
     
 }
