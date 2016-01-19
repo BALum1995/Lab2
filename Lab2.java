@@ -18,15 +18,15 @@ public class Lab2 {
 	
 	boolean manGoingToStIves = !true;
 
-	// short numWives = 8;
+	 int numWives = 7;
 
-	// int numSacksPerWife = (double) 7;
+	 int numSacksPerWife = 7;
 	
-	// int numCatsPerSack = 7.0;
+	 int numCatsPerSack = 7;
 
-	// int numKitsPerCat = (long) 7;
+	 int numKitsPerCat =  7;
 
-	// byte total;
+	 int total;
 
 	// If the original man is going to St. Ives, then all are going
 	// the narrator, original man, kitten, cats, sacks, wives.
@@ -38,10 +38,10 @@ public class Lab2 {
 	    // all of the wives, sacks, cats, and kittens are as well, along
 	    // with the narrator.
 	    // Calculate the number going to St. Ives
-	    //total = -1;
+	    total = (numWives * numSacksPerWife * numCatsPerSack * numKitsPerCat) + 1 + 1;
 	} else {
 	    // Otherwise, only the narrator is going!
-	    //total = 1;
+	    total = 1;
 	}
 	
 	// 3. Right before exiting, the system should print
